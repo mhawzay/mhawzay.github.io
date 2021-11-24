@@ -1,0 +1,1439 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mhawzay",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://virtserver.swaggerhub.com/E5567/MhawZay/1.0.0",
+      "description": "SwaggerHub API Auto Mocking"
+    },
+    {
+      "url": "http://etherio-server.herokuapp.com"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/manage/shops": {
+      "get": {
+        "tags": [
+          "General"
+        ],
+        "summary": "List owned shops",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 1534
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"5fe-u3+j3HxKJtIgEKhRquzhb7Bwb6U\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 04:22:06 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "shop_id": 7,
+                    "name": "Libby Griffith",
+                    "category": "Other",
+                    "status": "DRAFT",
+                    "avatar_url": "https://firebasestorage.googleapis.com/v0/b/mhawpay.appspot.com/o/qIT8EzIwIWb5Rj6zwc065DPiseP2%2F2021%2F11%2F22%2F1637570693718-360_F_310967735_vWiWRc8DGV3fb4eaW8O339AvbOsmxzVi.jpg?alt=media&token=b5bcf100-55c4-4417-88e9-87e163fbb6e4",
+                    "cover_url": "https://firebasestorage.googleapis.com/v0/b/mhawpay.appspot.com/o/qIT8EzIwIWb5Rj6zwc065DPiseP2%2F2021%2F11%2F22%2F1637570689553-15924091903361.jpg?alt=media&token=c6ffb882-9597-46fb-b5f6-4c33560e598f"
+                  },
+                  {
+                    "shop_id": 6,
+                    "name": "Apple",
+                    "category": "Other",
+                    "status": "DRAFT",
+                    "avatar_url": "https://ngzolkvckaceqgyugfow.supabase.co/storage/v1/object/public/s0/2021/11/22/1637563578723.qIT8EzIwIWb5Rj6zwc065DPiseP2.jfif",
+                    "cover_url": "https://ngzolkvckaceqgyugfow.supabase.co/storage/v1/object/public/s0/2021/11/22/1637563577129.qIT8EzIwIWb5Rj6zwc065DPiseP2.jpg"
+                  },
+                  {
+                    "shop_id": 1,
+                    "name": "Mhaw Zay",
+                    "category": "Other",
+                    "status": "DRAFT",
+                    "avatar_url": "https://ngzolkvckaceqgyugfow.supabase.in/storage/v1/object/sign/shops/1595530301220.jfif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaG9wcy8xNTk1NTMwMzAxMjIwLmpmaWYiLCJpYXQiOjE2Mzc1NDc3ODMsImV4cCI6MTk1MjkwNzc4M30.DDOaC3Csytol9B_zkD2QwETpPOGd9me54PzYKrtCqLo",
+                    "cover_url": "https://ngzolkvckaceqgyugfow.supabase.in/storage/v1/object/sign/shops/apple-store-westquay.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaG9wcy9hcHBsZS1zdG9yZS13ZXN0cXVheS5qcGciLCJpYXQiOjE2Mzc1NDc3NTgsImV4cCI6MTk1MjkwNzc1OH0.qYhakptBtuxwzscWzLwrIhFFVyEzhPsnjjb2ewYdvYE"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Create new shop",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "name": "Mhwazay",
+                  "category": "Other"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 204
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"cc-tbc8AUwC8Fk336T6NAUBoT+amBk\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 07:03:03 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "id": 11,
+                  "name": "Mhwazay",
+                  "created_at": "2021-11-23T07:03:05.857273+00:00",
+                  "user_id": "qIT8EzIwIWb5Rj6zwc065DPiseP2",
+                  "status": "UNPUBLISHED",
+                  "category": "Other"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/manage/shops/10": {
+      "delete": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Delete shop",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 14
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"e-QVqTNTSl+RZFg6KOBH7TyiPKarM\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 04:51:29 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "shop_id": 10
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/manage/shops/1": {
+      "patch": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Update shop",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "slug": "mhawzay",
+                  "status": "PUBLISHED"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 39
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"27-gIMyZ1sG7kY3Lay9vMxGKulVerc\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 07:09:17 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "slug": "mhawzay",
+                  "status": "PUBLISHED"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/manage/products": {
+      "get": {
+        "tags": [
+          "General"
+        ],
+        "summary": "List shop products",
+        "parameters": [
+          {
+            "name": "shop_id",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 937
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"3a9-3/XXEVBHEjO0VYY02WeeT/UQ/qY\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 06:43:44 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": [
+                  {
+                    "product_id": 1,
+                    "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+                    "price": 19000,
+                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                    "image_url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+                    "category": "Clothing",
+                    "status": "ACTIVE"
+                  },
+                  {
+                    "product_id": 2,
+                    "name": "Mens Casual Premium Slim Fit T-Shirts",
+                    "price": 22000,
+                    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+                    "image_url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+                    "category": "Clothing",
+                    "status": "ACTIVE"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Create new product",
+        "parameters": [
+          {
+            "name": "shop_id",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "name": "Product Name",
+                  "price": 4000,
+                  "category": "Clothing",
+                  "status": "DRAFT"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 231
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"e7-FU3SZ3TDH+Q756lqDSZsACoGJrg\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 07:03:26 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "id": 3,
+                  "created_at": "2021-11-23T07:03:28.686367+00:00",
+                  "name": "Product Name",
+                  "price": 4000,
+                  "category": "Clothing",
+                  "status": "DRAFT",
+                  "user_id": "qIT8EzIwIWb5Rj6zwc065DPiseP2",
+                  "shop_id": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/manage/products/4": {
+      "delete": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Delete product",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 16
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"10-t/BRHF0L40mlVe1C70iavr5F0u8\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 07:05:50 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "product_id": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/manage/products/1": {
+      "patch": {
+        "tags": [
+          "General"
+        ],
+        "summary": "Update product",
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Content-Security-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "off"
+                }
+              },
+              "Expect-CT": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=0"
+                }
+              },
+              "X-Frame-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "SAMEORIGIN"
+                }
+              },
+              "Strict-Transport-Security": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=15552000; includeSubDomains"
+                }
+              },
+              "X-Download-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "noopen"
+                }
+              },
+              "X-Content-Type-Options": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "none"
+                }
+              },
+              "Referrer-Policy": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "no-referrer"
+                }
+              },
+              "X-XSS-Protection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 0
+                }
+              },
+              "Content-Type": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "application/json; charset=utf-8"
+                }
+              },
+              "Content-Length": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "integer",
+                  "example": 16
+                }
+              },
+              "ETag": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"10-t/BRHF0L40mlVe1C70iavr5F0u8\""
+                }
+              },
+              "Date": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "Tue, 23 Nov 2021 07:05:50 GMT"
+                }
+              },
+              "Connection": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Keep-Alive": {
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                },
+                "example": {
+                  "product_id": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}
